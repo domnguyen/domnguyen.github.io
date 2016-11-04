@@ -172,18 +172,23 @@
     <script src="js/bootstrap.min.js"></script>
 
     <script>
+    /* Loading Animations once you reach the section init */
         new WOW().init();
-        $(document).ready(){
-            topCalc = $(window).height() - $('.boat').height() - 100;
-        });
     </script>
 
     <script>
+    /* Set the boat height on page load */
+    $(document).ready(){
+        topCalc = $(window).height() - $('.boat').height() - 100;
+        $('#boat').css({top: topCalc});
+    });
+    /* Declaration of variables for mouse following boat */
         var mouseX = 0,
             mouseY = 0,
             leftX = 0,
             topCalc = 0, $xp = 0,
             $yp = 0 , bWidthHalf = 0, bWidth = 0;
+
         $('.name-window').mousemove(function(e) {
             bWidthHalf = $('.boat').width()/2;
             bWidth = $('.boat').width();
