@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Dominique Nguyen | UC San Diego Undergraduate </title>
+
+    <!-- Bootstrap Core CSS -->
+    <link href="css/bootstrap.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Oswald" />
+    <link rel="shortcut icon" href="img/TinyLogo.png" />
+    <link href="css/style.css" rel="stylesheet">
+    <link href="css/animate.css" rel="stylesheet">
+
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+</head>
+
+
+<body>
+
+
+
+    <!-- Name page -->
+    <div class="full-height name-window">
+        <div class="container ">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="introduction-text">
+                        <h1 class="name flat-shadow-text wow fadeIn">Dominique Nguyen</h1>
+                        <hr class="name-break wow fadeIn">
+                        <h3 class="flat-shadow-text wow fadeInLeft" data-wow-delay="1s">Web Developer , Software Developer</h3>
+                        <h5 class="flat-shadow-text wow fadeInLeft" data-wow-delay="2s">B.S. Mathematics - Computer Science , UC San Diego</h5>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+
+        <div id="boat">
+            <img src="/img/boat.png" class="boat" alt="tugboat" >
+        </div>
+
+
+
+
+        <h6 class="scroll-down flat-shadow-text wow fadeIn" data-wow-delay="5s">Scroll Down to Learn More</h6>
+
+
+
+
+    </div>
+
+
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-inverse" role="navigation">
+        <div class="container">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+
+            </div>
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav">
+                    <li>
+                        <a href="#">Projects</a>
+                    </li>
+                    <li>
+                        <a href="#">Resume</a>
+                    </li>
+
+                    <li>
+                        <a href="#">Contact Me!</a>
+                    </li>
+                </ul>
+            </div>
+            <!-- /.navbar-collapse -->
+        </div>
+        <!-- /.container -->
+    </nav>
+
+
+    <div class="container full-height projects-window">
+        <div class="row">
+            <div class="wow fadeIn">
+                <div class="col-lg-6 project">
+                    <h1>Title</h1>
+
+                </div>
+                <div class="col-lg-6 project">
+                    <h1>Title</h1>
+
+                </div>
+                <div class="col-lg-6 project">
+                    <h1>Title</h1>
+
+                </div>
+                <div class="col-lg-6 project">
+                    <h1>Title</h1>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- /.container -->
+
+
+    <!-- jQuery -->
+    <script src="/js/jquery.js"></script>
+    <script src="/js/wow.js"></script>
+    <script src="/js/jqfloat.js"></script>
+
+
+
+
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="js/bootstrap.min.js"></script>
+
+    <script>
+        new WOW().init();
+    </script>
+
+    <script>
+        var mouseX = 0,
+            mouseY = 0,
+            leftX = 0,
+            topCalc = 0, $xp = 0,
+            $yp = 0 , bWidthHalf = 0, bWidth = 0;
+        $('.name-window').mousemove(function(e) {
+            bWidthHalf = $('.boat').width()/2;
+            bWidth = $('.boat').width();
+
+
+            if (e.pageX >= $(window).width() -  (  bWidthHalf)) {
+
+
+                leftX = $(window).width() - bWidth - 50;
+            } else if (e.pageX < bWidth ) {
+                leftX = e.pageX;
+            } else {
+
+                leftX = e.pageX - (  bWidthHalf);
+            }
+
+            topCalc = $(window).height() - $('.boat').height() - 100;
+
+            var $loop = setInterval(function() {
+                $xp += ((leftX - $xp) / 9000);
+
+                $('#boat').css({
+                    left: $xp,
+                    top: topCalc
+                });
+            }, 15);
+
+        });
+    </script>
+
+
+</body>
+<footer>
+    <br>
+    <center>
+        <p>&copy; Copyright Dominique Nguyen | Custom Built via HTML, CSS, &amp; Javascript</p>
+    </center>
+</footer>
+
+
+</html>
