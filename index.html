@@ -177,10 +177,9 @@
     </script>
     <script>
     /* Set the boat height on page load */
-    $(document).ready(){
+    $(document).ready(function(){
       marginBoat = $(window).height() - $('.boat').height() - 100;
         $('#boat').css({
-            "left", "300":
             "top",marginBoat
         });
     });
