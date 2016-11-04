@@ -178,10 +178,10 @@
 
     <script>
     /* Set the boat height on page load */
-    $(document).ready(){
-        topCalc = $(window).height() - $('.boat').height() - 100;
-        $('#boat').css({top: topCalc});
+    $(document).ready(
+        $('#boat').css({top: $(window).height() - $('.boat').height() - 100});
     });
+
     /* Declaration of variables for mouse following boat */
         var mouseX = 0,
             mouseY = 0,
