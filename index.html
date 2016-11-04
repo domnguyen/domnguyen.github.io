@@ -175,12 +175,14 @@
     /* Loading Animations once you reach the section init */
         new WOW().init();
     </script>
-
     <script>
     /* Set the boat height on page load */
     $(document).ready(
-        $('#boat').css({top: $(window).height() - $('.boat').height() - 100});
+        $('#boat').css(top: $(window).height() - $('.boat').height() - 100);
     });
+    </script>
+
+    <script>
 
     /* Declaration of variables for mouse following boat */
         var mouseX = 0,
