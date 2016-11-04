@@ -19,7 +19,7 @@ background: #3498db url("/img/water.png") repeat-x bottom left;;
 }
 .introduction-text{
   position:static;
-  margin-top:15%;
+  margin-top:200px;
   text-align: center;
   display:block;
 
@@ -75,7 +75,7 @@ h6.scroll-down{
 
 @-webkit-keyframes bg-move {
 	0%   { background-position:  0px 100%; }
-	100% { background-position:  50% 100%; }
+	100% { background-position:  100% 100%; }
 }
 
 
