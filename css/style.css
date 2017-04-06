@@ -23,7 +23,7 @@ background: #3498db url("/img/water.png") repeat-x bottom left;
   vertical-align: middle;
   text-align: center;
   width:100%;
-  padding-bottom:150px;
+  padding-bottom:220px;
 
 }
 .introduction-text{
@@ -66,18 +66,17 @@ h5  {
 .boat{
   z-index: 8;
   -webkit-animation: boat-float 3s infinite;
-
   width:370px;
 }
 h6.scroll-down{
   text-align: center;
   color:white;
   font-size:2em;
+  margin:0 auto;
   margin-top:30px;
   position:absolute;
   bottom:50px;
-  left:40vw;
-  right:40vw;
+
 }
 
 #boat{
