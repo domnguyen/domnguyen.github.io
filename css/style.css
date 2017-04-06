@@ -50,7 +50,8 @@ h5  {
 /* jqFloat.js */
 
 .full-height {
-	-webkit-animation: bg-move 10s infinite linear;
+	-webkit-animation: bg-move 20s linear infinite;
+  animation: bg-move 20s linear infinite;
 }
 
 
@@ -80,10 +81,13 @@ h6.scroll-down{
   margin:15px 0;
 }
 @-webkit-keyframes bg-move {
-	0%   { background-position:  0px 100%; }
-	100% { background-position:  100% 100%; }
+	from  { background-position:  0 0; }
+	to { background-position:  -400px 0; }
 }
-
+@keyframes bg-move{
+  from  { background-position:  0 0; }
+  to { background-position:  -400px 0; }
+}
 
 @-webkit-keyframes boat-float {
 	50% { -webkit-transform: rotate(-10deg) translateY(-10px); }
