@@ -80,8 +80,7 @@ h6.scroll-down{
 }
 #sun{
   background: url("/img/sun.png") top right;
-  background-position:  0 100%;
-  -webkit-animation: sun-move 20s linear infinite;
+  /*background-position:  0 100%;*/
   animation: sun-move 20s linear infinite;
 }
 .project{
@@ -96,15 +95,9 @@ h6.scroll-down{
   to { background-position:  640px 100%; }
 }
 
-@-webkit-keyframes sun-move {
-  from  { background-position:  0 20%;
-  -webkit-transform: rotate(-10deg) translateY(-10px);}
-  to { background-position:  0px 22%;
-  -webkit-transform: rotate(-10deg) translateY(-10px); }
-}
+
 @keyframes sun-move{
-  from  { -webkit-transform: rotate(-10deg) translateY(-10px);}
-  to { -webkit-transform: rotate(-170deg) translateY(-10px); }
+50% { -webkit-transform: rotate(-10deg) translateY(-10px); }
 }
 
 @-webkit-keyframes boat-float {
