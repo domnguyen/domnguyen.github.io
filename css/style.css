@@ -50,8 +50,10 @@ h5  {
 /* jqFloat.js */
 
 .full-height {
-	-webkit-animation: bg-move 10s infinite;
+	-webkit-animation: bg-move 10s infinite linear;
 }
+
+
 .boat{
   z-index: 8;
   -webkit-animation: boat-float 3s infinite;
