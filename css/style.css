@@ -79,9 +79,10 @@ h6.scroll-down{
   top:90%;
 }
 #sun{
-  background: url("/img/sun.png") top right;
-  /*background-position:  0 100%;*/
   animation: sun-move 20s linear infinite;
+  position:absolute;
+  top:5%;
+  right:5%;
 }
 .project{
   margin:15px 0;
