@@ -172,10 +172,9 @@
     <script src="/js/bootstrap.min.js"></script>
 
     <script>
-    /* Loading Animations once you reach the section init */
+    /* Loading Animations once you reach the section initialization */
         new WOW().init();
-    </script>
-    <script>
+
     /* Set the boat height on page load */
     $(document).ready(function(){
       marginBoat = $(window).height() - $('.boat').height() - 100;
@@ -198,10 +197,7 @@
             bWidthHalf = $('.boat').width()/2;
             bWidth = $('.boat').width();
 
-
             if (e.pageX >= $(window).width() -  (  bWidthHalf)) {
-
-
                 leftX = $(window).width() - bWidth - 50;
             } else if (e.pageX < bWidth ) {
                 leftX = e.pageX;
@@ -219,7 +215,7 @@
                     left: $xp,
                     top: topCalc
                 });
-            }, 15);
+            }, 40);
 
         });
     </script>
