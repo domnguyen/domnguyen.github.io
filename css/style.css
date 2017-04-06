@@ -14,7 +14,7 @@ img { max-width: 100% }
   width:100%;
 }
 .name-window{
-background: #3498db url("/img/water.png") repeat-x bottom left;;
+background: #3498db url("/img/water.png") repeat-x bottom left;
   padding-bottom:30px;
 }
 .introduction-text{
@@ -23,6 +23,12 @@ background: #3498db url("/img/water.png") repeat-x bottom left;;
   text-align: center;
   display:block;
 
+}
+
+#sun{
+  background: url"/img/sun.png");
+  -webkit-animation: sun-move 20s linear infinite;
+  animation: sun-move 20s linear infinite;
 }
 h1.name{
   font-size:6.2em;
@@ -87,6 +93,19 @@ h6.scroll-down{
 @keyframes bg-move{
   from  { background-position:  0 100%; }
   to { background-position:  640px 100%; }
+}
+
+@-webkit-keyframes sun-move {
+  from  { background-position:  0 20%;
+  -webkit-transform: rotate(-10deg) translateY(-10px);}
+  to { background-position:  0px 22%;
+  -webkit-transform: rotate(-10deg) translateY(-10px); }
+}
+@keyframes sun-move{
+  from  { background-position:  0 20%;
+  -webkit-transform: rotate(-10deg) translateY(-10px);}
+  to { background-position:  0px 22%;
+  -webkit-transform: rotate(-10deg) translateY(-10px); }
 }
 
 @-webkit-keyframes boat-float {
