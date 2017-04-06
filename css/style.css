@@ -25,12 +25,7 @@ background: #3498db url("/img/water.png") repeat-x bottom left;
 
 }
 
-#sun{
-  background: url("/img/sun.png") top right;
-  background-position:  0 100%;
-  -webkit-animation: sun-move 20s linear infinite;
-  animation: sun-move 20s linear infinite;
-}
+
 h1.name{
   font-size:6.2em;
 }
@@ -83,7 +78,12 @@ h6.scroll-down{
   position: absolute;
   top:90%;
 }
-
+#sun{
+  background: url("/img/sun.png") top right;
+  background-position:  0 100%;
+  -webkit-animation: sun-move 20s linear infinite;
+  animation: sun-move 20s linear infinite;
+}
 .project{
   margin:15px 0;
 }
