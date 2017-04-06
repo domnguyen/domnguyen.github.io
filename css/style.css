@@ -14,7 +14,7 @@ img { max-width: 100% }
   width:100%;
 }
 .name-window{
-background: #3498db url("/img/water.png") repeat-x bottom left;
+background: transparent url("/img/water.png") repeat-x bottom left;
   padding-bottom:30px;
   display: table;
 }
@@ -115,9 +115,9 @@ h6.scroll-down{
 
 
 .sky {
-  background: linear-gradient(#85a5cc 0, #d0e4f2 100%);
-  box-shadow: 0 0 20px #d0e4f2;
-  height: 44%;
+  background: linear-gradient(#85a5cc 0, rgba(0,0,0,0) 100%);
+  /*box-shadow: 0 0 20px #d0e4f2;*/
+  height: 75%;
   overflow: hidden;
   position: absolute;
   width: 100%;
