@@ -22,6 +22,8 @@ background: #3498db url("/img/water.png") repeat-x bottom left;
   display: table-cell;
   vertical-align: middle;
   text-align: center;
+  width:100%;
+  padding-bottom:150px;
 
 }
 .introduction-text{
