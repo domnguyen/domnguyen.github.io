@@ -16,12 +16,12 @@ img { max-width: 100% }
 .name-window{
 background: #3498db url("/img/water.png") repeat-x bottom left;
   padding-bottom:30px;
+  display: table;
 }
 .introduction-text{
-  position:static;
-  margin-top:200px;
+  display: table-cell;
+  vertical-align: middle;
   text-align: center;
-  display:block;
 
 }
 
