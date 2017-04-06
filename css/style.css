@@ -81,12 +81,12 @@ h6.scroll-down{
   margin:15px 0;
 }
 @-webkit-keyframes bg-move {
-	from  { background-position:  0 0; }
-	to { background-position:  -400px 0; }
+  from  { background-position:  0 100%; }
+  to { background-position:  640px 100%; }
 }
 @keyframes bg-move{
-  from  { background-position:  0 0; }
-  to { background-position:  -400px 0; }
+  from  { background-position:  0 100%; }
+  to { background-position:  640px 100%; }
 }
 
 @-webkit-keyframes boat-float {
