@@ -133,7 +133,7 @@ h6.scroll-down{
   width: 102px;
 }
 .sky .cloud.variant-1 {
-  top: 76%;
+  top: 50%;
   -webkit-transform: scale(0.2);
   -webkit-animation: clouds-in-out 16s 0s infinite linear;
 }
