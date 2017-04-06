@@ -18,13 +18,17 @@ background: #3498db url("/img/water.png") repeat-x bottom left;
   padding-bottom:30px;
   display: table;
 }
-.introduction-text, .vertical-align-child{
+.vertical-align-child{
   display: table-cell;
   vertical-align: middle;
   text-align: center;
 
 }
-
+.introduction-text{
+  text-align: center;
+  display: block;
+  margin:0 auto;
+}
 
 h1.name{
   font-size:6.2em;
