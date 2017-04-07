@@ -33,9 +33,7 @@ background: transparent url("/img/water.png") repeat-x bottom left;
   display:table;
   width:100%;
 }
-.sixty-percent{
-  min-height:60vh;
-}
+
 .introduction-text{
   text-align: center;
   display: block;
