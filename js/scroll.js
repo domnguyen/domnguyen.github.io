@@ -1,10 +1,9 @@
 
 $(window).scroll(function() {
    var hT = $('.full-height').height(),
-       wH = $(window).height(),
        wS = $(this).scrollTop();
-    console.log((hT-wH) , wS);
-   if (wS > (hT-wH)){
+    console.log((hT) , wS);
+   if (wS > (hT)){
      $("nav.navbar").addClass("navbar-fixed-top");
    }
 	 else{
