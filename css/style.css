@@ -25,8 +25,9 @@ background: transparent url("/img/water.png") repeat-x bottom left;
   vertical-align: middle;
   text-align: center;
   width:100%;
-  padding-bottom:220px;
-
+}
+.intro-text-pad{
+    padding-bottom:220px;
 }
 .vertical-align-parent{
   display:table;
@@ -69,7 +70,6 @@ h5  {
   background: #bdc3c7;
 }
 
-/* jqFloat.js */
 
 .full-height {
 	-webkit-animation: bg-move 20s linear infinite;
@@ -191,8 +191,6 @@ h6.scroll-down{
   top: -24px;
   width: 60px;
 }
-
-
 
 
 @-webkit-keyframes shadow-in-out {
