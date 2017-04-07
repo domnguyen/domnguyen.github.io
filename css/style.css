@@ -59,6 +59,12 @@ hr.skills{
   margin: 20px auto;
   border: 1px solid black;
 }
+
+hr.titles{
+  width:4%;
+  margin: 20px auto;
+  border: 2px solid black;
+}
 h3{
   font-size:3em;
 }
