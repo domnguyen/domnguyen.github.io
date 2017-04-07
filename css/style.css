@@ -34,7 +34,8 @@ background: transparent url("/img/water.png") repeat-x bottom left;
   width:100%;
 }
 .container-padding{
-  padding:10% 0;
+  padding-top:8%;
+  padding-bottom:10%;
 }
 .introduction-text{
   text-align: center;
