@@ -7,4 +7,7 @@ $(window).scroll(function() {
    if (wS > (hT-wH)){
      $("nav.navbar").addClass("navbar-fixed-top");
    }
+	 else{
+		 $("nav.navbar").removeClass("navbar-fixed-top");
+	 }
 });
