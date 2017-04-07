@@ -30,6 +30,7 @@ background: transparent url("/img/water.png") repeat-x bottom left;
 }
 .vertical-align-parent{
   display:table;
+  width:100%;
 }
 .sixty-percent{
   min-height:60vh;
