@@ -28,6 +28,12 @@ background: transparent url("/img/water.png") repeat-x bottom left;
   padding-bottom:220px;
 
 }
+.vertical-align-parent{
+  display:table;
+}
+.sixty-percent{
+  min-height:60vh;
+}
 .introduction-text{
   text-align: center;
   display: block;
