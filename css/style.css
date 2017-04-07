@@ -33,15 +33,17 @@ background: transparent url("/img/water.png") repeat-x bottom left;
   display:table;
   width:100%;
 }
-.sixty-percent{
-  min-height:60vh;
+.container-padding{
+  padding:10% 0;
 }
 .introduction-text{
   text-align: center;
   display: block;
   margin:0 auto;
 }
-
+.navbar{
+  margin-bottom: 0px;
+}
 h1.name{
   font-size:6.2em;
 }
