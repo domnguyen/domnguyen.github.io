@@ -53,6 +53,11 @@ hr.name-break{
   border: 3px solid white;
   box-shadow: 2px 2px rgba(0,0,0,0.25);
 }
+hr.skills{
+  width:50%;
+  margin: 20px auto;
+  border: 2px solid black;
+}
 h3{
   font-size:3em;
 }
