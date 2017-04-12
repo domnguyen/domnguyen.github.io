@@ -233,7 +233,7 @@ h6.scroll-down{
 }
 
 
-@media screen only and (max-width:768px){
+@media only screen and (max-device-width:768px){
   h1.name{
     font-size:3em;
   }
