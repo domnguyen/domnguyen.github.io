@@ -88,13 +88,11 @@ h5  {
 .sun{
   z-index: 8;
   -webkit-animation: boat-float 3s infinite;
-
-  width:30%;
+  width:300px;
 }
 .boat{
   z-index: 8;
   -webkit-animation: boat-float 3s infinite;
-
   max-width:370px;
 }
 h6.scroll-down{
@@ -231,5 +229,18 @@ h6.scroll-down{
   }
   100% {
     right: 105%;
+  }
+}
+
+
+@media screen only and (max-width:768px){
+  h1.name{
+    font-size:3em;
+  }
+  .introduction-text h3{
+    font-size:1.8em;
+  }
+  .introduction-text h5{
+    font-size:1.5em;
   }
 }
