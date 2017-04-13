@@ -256,4 +256,7 @@ display:none;
   .scroll-down{
     color:black;
   }
+  hr.name-break{
+width:50%;
+  }
 }
