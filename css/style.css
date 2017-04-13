@@ -237,6 +237,8 @@ h6.scroll-down{
   padding: 15px 25px;
   background: transparent;
   border-radius: 0px;
+  margin:0 auto;
+  display:block;
 }
 
 
