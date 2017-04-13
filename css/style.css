@@ -118,7 +118,7 @@ h6.scroll-down{
   width:200px;
 }
 .project{
-  margin:15px 0;
+  margin:40px 0;
 }
 @-webkit-keyframes bg-move {
   from  { background-position:  0 100%; }
