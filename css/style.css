@@ -120,6 +120,10 @@ h6.scroll-down{
 .project{
   margin:40px 0;
 }
+
+.project img{
+  margin-top:20px;
+}
 @-webkit-keyframes bg-move {
   from  { background-position:  0 100%; }
   to { background-position:  640px 100%; }
