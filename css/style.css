@@ -218,12 +218,12 @@ h6.scroll-down{
    display:block;
  }
 
- .nav ul {
+ ul.nav {
    list-style: none;
    text-align: center;
 }
 
-.nav ul li {
+ul.nav li {
    display: inline-block;
 }
 @-webkit-keyframes shadow-in-out {
