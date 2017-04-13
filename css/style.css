@@ -243,4 +243,14 @@ h6.scroll-down{
   .introduction-text h5{
     font-size:1.5em;
   }
+  .sun{
+display:none;
+  }
+  .boat{
+  display:none;
+  }
+  .name-window{
+  background: transparent;
+
+  }
 }
