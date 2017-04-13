@@ -208,7 +208,15 @@ h6.scroll-down{
   width: 60px;
 }
 
-
+.resume-button{
+  border:2px solid black;
+  padding: 15px 25px;
+  background: transparent;
+  border-radius: 0px;
+  margin:0 auto;
+  margin-top:30px;
+   display:block;
+ }
 @-webkit-keyframes shadow-in-out {
   0% {
     opacity: 0;
