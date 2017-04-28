@@ -11,10 +11,51 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     $headers = "From:" . $senders_email;
 
     if (mail($to, $subject, $message, $headers)) {
+?>
+<div id="Modal" class="modal fade" role="dialog">
+  <div class="modal-dialog">
 
+    <!-- Modal content-->
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal">&times;</button>
+        <h4 class="modal-title">Success</h4>
+      </div>
+      <div class="modal-body">
+        <p>The email has been sent! I will be responding to your question or inquiry at my earliest convenience!</p>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+
+  </div>
+</div>
+<?php
     }
     else {
+      ?>
 
+      <div id="Modal" class="modal fade" role="dialog">
+        <div class="modal-dialog">
+
+          <!-- Modal content-->
+          <div class="modal-content">
+            <div class="modal-header">
+              <button type="button" class="close" data-dismiss="modal">&times;</button>
+              <h4 class="modal-title">Error</h4>
+            </div>
+            <div class="modal-body">
+              <p>Something has gone wrong.</p>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+            </div>
+          </div>
+
+        </div>
+      </div>
+      <?php
     }
 
 
@@ -22,6 +63,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 }
 
 ?>
+
 
 <!DOCTYPE html>
 <html lang="en">
@@ -237,7 +279,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         <div class="row">
 
             <div class="col-md-10 col-md-offset-2">
-                <form class="form-horizontal" action="submit.php" method="post">
+                <form class="form-horizontal" action="index.php" method="post">
                     <div class="form-group">
                         <label class="control-label col-sm-2" for="name">Name:</label>
                         <div class="col-sm-6">
