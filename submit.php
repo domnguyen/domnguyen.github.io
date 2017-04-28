@@ -7,7 +7,8 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     $message = $_POST['message'];
 
     $to = "dom.nguyen1@gmail.com";
-    $headers = "From:" . $from;
+    $subject ="Form has been filled out on site";
+    $headers = "From:" . $senders_email;
 
     if (mail($to, $subject, $message, $headers)) {
         echo "Mail Sent.";
