@@ -9,34 +9,35 @@
 </head>
 
 <body>
-  <div class="hero-head">
-    <nav class="navbar is-light is-fixed-top">
+
+
+    <nav id="navbar" class="navbar is-light is-fixed-top">
       <div class="container">
         <div class="navbar-brand">
           <a class="navbar-item" href="/">
        <img src="/img/domslogo.png" alt="Dominique Nguyen" >
      </a>
-     <a class="navbar-item is-hidden-desktop" href="https://github.com/domnguyen" target="_blank">
+          <a class="navbar-item is-hidden-desktop" href="https://github.com/domnguyen" target="_blank">
 <span class="icon" style="color: #333;">
   <i class="fa fa-lg fa-github"></i>
 </span>
 </a>
 
 
+<div id="nav-toggle" class="navbar-burger burger">
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
 
-          <button class="button navbar-burger">
-       <span></span>
-       <span></span>
-       <span></span>
-     </button>
         </div>
 
-        <div class="navbar-menu">
+         <div class="navbar-menu" id="navMenu">
           <div class="navbar-start">
             <div class="navbar-item has-dropdown is-hoverable">
               <a class="navbar-link">Current Projects</a>
 
-              <div class="navbar-dropdown">
+              <div class="navbar-dropdown is-boxed">
                 <a class="navbar-item" href="/curr/"><b>Websites / Web Applications</b></a>
                 <a class="navbar-item" href="/curr/cerealkilla.html">Cereal Killa</a>
                 <hr>
@@ -75,7 +76,7 @@
         </div>
       </div>
     </nav>
-  </div>
+
 
   <!-- End of Nav -->
 
@@ -119,7 +120,7 @@
         <br> <br>While there, I learned <b>HTML5</b>, <b>CSS3</b>, <b>PHP</b>, <b>MYSQL</b>, <b>Bootstrap</b> and maintained <b>Drupal 7 and 8</b> websites.</h3>
           <h3 class="subtitle">After I graduated, I wanted to learn more about modern web developement. <br> <br> My workflow now contains
         <b>npm</b>, <b>gulp</b>, <b>SASS</b>, as well as a new CSS Framework, <b><a href="https://bulma.io/" target="_blank">Bulma</a></b>.</h3>
-        <h3 class="subtitle">I also wanted to expand beyond web, so I have been also working on a Discord Bot, written in C#.</h3>
+          <h3 class="subtitle">I also wanted to expand beyond web, so I have been also working on a Discord Bot, written in C#.</h3>
           <h3 class="subtitle">To view examples of how I've used the tools above, please visit my <a href="/past/">past</a> and <a href="/curr/">present</a> work.</h3>
         </div>
       </div>
@@ -128,7 +129,7 @@
     <section class="hero is-success is-medium">
       <div class="container">
         <div class="hero-header">
-            <h1 class="title has-text-centered white-text">View Previous and Current Projects</h1>
+          <h1 class="title has-text-centered white-text">View Previous and Current Projects</h1>
         </div>
         <div class="hero-body">
 
@@ -138,26 +139,26 @@
           <div class="columns is-vcentered has-text-centered">
             <div class="column">
               <a href="/past/">
-              <div class="box past-work home-page-boxes">
-                <i class="fa fa-folder-o fa-3x" aria-hidden="true"></i>
-                <h1>Past Work</h1>
-              </div>
+                <div class="box past-work home-page-boxes">
+                  <i class="fa fa-folder-o fa-3x" aria-hidden="true"></i>
+                  <h1>Past Work</h1>
+                </div>
               </a>
             </div>
             <div class="column">
-                <a href="/curr/">
-              <div class="box past-work home-page-boxes">
-                <i class="fa fa-folder-open-o fa-3x" aria-hidden="true"></i>
-                <h1>Current Projects</h1>
-              </div>
-            </a>
+              <a href="/curr/">
+                <div class="box past-work home-page-boxes">
+                  <i class="fa fa-folder-open-o fa-3x" aria-hidden="true"></i>
+                  <h1>Current Projects</h1>
+                </div>
+              </a>
             </div>
             <div class="column">
-              <a href="/contant.html">
-              <div class="box past-work home-page-boxes">
-                <i class="fa fa-envelope-o fa-3x" aria-hidden="true"></i>
-                <h1>Contact</h1>
-              </div>
+              <a href="/contact.html">
+                <div class="box past-work home-page-boxes">
+                  <i class="fa fa-envelope-o fa-3x" aria-hidden="true"></i>
+                  <h1>Contact</h1>
+                </div>
               </a>
             </div>
           </div>
@@ -175,15 +176,16 @@
   <div class="footer">
     <div class="container">
       <div class="columns is-mobile">
-        <div class="column is-half is-offset-one-quarter has-text-centered"><h3>Website created by Dominique Nguyen</h3>
+        <div class="column is-half is-offset-one-quarter has-text-centered">
+          <h3>Website created by Dominique Nguyen</h3>
           <br>
-        <p><a href="http://www.linkedin.com/in/dom-nguyen" target="_blank"> <i class="fa fa-linkedin-square fa-2x" aria-hidden="true"></i></a> <span>&nbsp;</span>
-           <a href="https://github.com/domnguyen" target="_blank"><i class="fa fa-2x fa-github" aria-hidden="true"></i></a> <span>&nbsp;</span>
-          <a href="mailto:dom.nguyen1@gmail.com"> <i class="fa fa-envelope-o fa-2x" aria-hidden="true"></i></a> <span>&nbsp;</span>
-        <a href="/docs/DominiqueNguyenResume.pdf"><i class="fa fa-file-pdf-o fa-2x" aria-hidden="true"></i></a></p> <br>
+          <p><a href="http://www.linkedin.com/in/dom-nguyen" target="_blank"> <i class="fa fa-linkedin-square fa-2x" aria-hidden="true"></i></a> <span>&nbsp;</span>
+            <a href="https://github.com/domnguyen" target="_blank"><i class="fa fa-2x fa-github" aria-hidden="true"></i></a> <span>&nbsp;</span>
+            <a href="mailto:dom.nguyen1@gmail.com"> <i class="fa fa-envelope-o fa-2x" aria-hidden="true"></i></a> <span>&nbsp;</span>
+            <a href="/docs/DominiqueNguyenResume.pdf"><i class="fa fa-file-pdf-o fa-2x" aria-hidden="true"></i></a></p> <br>
 
-          <p>  <a href="https://bulma.io"> <img src="https://bulma.io/images/made-with-bulma.png" alt="Made with Bulma" width="128" height="24"></a>
-      </p>
+          <p> <a href="https://bulma.io"> <img src="https://bulma.io/images/made-with-bulma.png" alt="Made with Bulma" width="128" height="24"></a>
+          </p>
 
         </div>
 
@@ -193,7 +195,7 @@
 
     </div>
   </div>
-  
+  <script src="js/main.min.js"></script>
 </footer>
 
 </html>
