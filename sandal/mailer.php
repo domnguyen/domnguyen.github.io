@@ -27,7 +27,7 @@
         $recipient = "mailing@socalrealty.biz";
 
         // Set the email subject.
-        $subject = "$name has completed the form on SandalHomesRealty.com";
+        $subject = "$name has completed the form on SoCalrealty.biz";
 
         // Build the email content.
         $email_content = "Name: $name\n";
