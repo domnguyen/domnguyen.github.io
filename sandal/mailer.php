@@ -24,7 +24,7 @@
 
         // Set the recipient email address.
         // FIXME: Update this to your desired email address.
-        $recipient = "mailing@socalrealty.biz";
+        $recipient = "rmerino@socalrealty.biz";
 
         // Set the email subject.
         $subject = "$name has completed the form on SoCalrealty.biz";
