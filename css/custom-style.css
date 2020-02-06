@@ -4,11 +4,36 @@
 
 .homepage-spacer{
 	background: rgb(22,23,72);
-    background: linear-gradient(90deg, rgba(22,23,72,1) 0%, rgba(14,1,36,1) 100%);
+    background: linear-gradient(90deg, rgba(22,23,72,1) 0%, rgba(14,1,36,.7) 100%);
 }
 
 .homepage-name-block .title, .homepage-name-block .subtitle{
 	
 		color:white !important;
 	
+}
+
+
+.is-pink{
+	background-color:#fea49f;
+}
+
+.past-work{
+	background-color:#b5706c;
+}
+.past-work:hover{
+background-color: #9a5f5b;
+}
+
+.footer{
+	background-color:#131313;
+	color:white;
+}
+
+.footer a{
+	color:white;
+}
+
+.footer a:hover{
+	color:#fea49f;
 }
