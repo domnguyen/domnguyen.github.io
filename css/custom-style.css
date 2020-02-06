@@ -59,3 +59,13 @@ section.is-contact{
 section.is-contact a{
 	color:white;
 }
+
+.is-fixed-top{
+    position: fixed;
+    top: 0;
+    z-index: 999;
+    width: 100%;
+}
+body{
+	margin-top:50px;
+}
