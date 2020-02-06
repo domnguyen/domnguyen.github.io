@@ -1,11 +1,13 @@
 {
   "ExpandedNodes": [
     "",
+    "\\css",
     "\\curr",
     "\\docs",
+    "\\float",
     "\\past",
-    "\\sandal"
+    "\\sc"
   ],
-  "SelectedNode": "\\sandal\\mailer.php",
+  "SelectedNode": "\\curr\\index.html",
   "PreviewInSolutionExplorer": false
 }
