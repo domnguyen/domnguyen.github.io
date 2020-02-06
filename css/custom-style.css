@@ -30,7 +30,7 @@ background-color: #9a5f5b;
 	color:white;
 }
 
-.footer a{
+.footer a, #past-projects .title, #past-projects .subtitle{
 	color:white;
 }
 
@@ -41,4 +41,21 @@ background-color: #9a5f5b;
 #past-projects{
     background: #161748;
     color: white;
+}
+
+.hero.is-success {
+    background-color: #007f4f;
+    color: #fff;
+}
+.hero.is-info {
+    background-color: #00a0a0;
+    color: #fff;
+}
+
+section.is-contact{
+	background-color: #161748;
+}
+
+section.is-contact a{
+	color:white;
 }
