@@ -3,22 +3,45 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=800, initial-scale=1.0">
-    <title>Binary Love: 1 or 1?</title>
+    <title>Euphemia.... welcome?!??</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div class="content-box">
-        <h1>Will you be my Valentine?</h1>
+    <div class="content-box step-1">
+        <h1>Hi Welcome To BobaGhost Cards!</h1>
+        <div class="button-container">
+            <button id="next-1">... I'm not here for pokemon cards...</button>
+        </div>
+    </div>
+
+
+    <div class="content-box step-2 hide">
+        <h1>Oh wait, is that you Mia?? </h1>
+        <div class="button-container">
+            <button id="next-2">... Whats up?</button>
+        </div>
+    </div>
+
+     <div class="content-box step-3 hide">
+        <h1>Dear Euphemia.......Will you be my Valentine?</h1>
         <div class="button-container">
             <button id="yes">Yes</button>
             <button id="no">No</button>
         </div>
     </div>
 
+
+     <div class="content-box hide">
+        <h1>Will you be my Valentine?</h1>
+        <div class="button-container">
+            <button id="yes">Yes</button>
+            <button id="no">No</button>
+        </div>
+    </div>
  
 
     <audio id="background-music" loop>
-        <source src="https://raw.githubusercontent.com/TheDataDesk/Binary-Love/main/song.mp3" type="audio/mp3">
+        <source src="https://domnguyen.github.io/valentines/brokeboys.mp3" type="audio/mp3">
     </audio>
 
     <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.6.0"></script>
@@ -27,6 +50,9 @@
         document.addEventListener("DOMContentLoaded", function () {
             const noButton = document.getElementById('no');
             const yesButton = document.getElementById('yes');
+            const stepOneButton = document.getElementById('next-1');
+            const stepTwoButton = document.getElementById('next-2');
+            const stepThreeButton = document.getElementById('next-3');
             
             noButton.addEventListener('mouseenter', function () {
                 noButton.classList.add('shake');
@@ -40,7 +66,17 @@
             yesButton.addEventListener('click', function () {
                 alert('Yay! Can’t wait for our date! ❤️');
                 confetti();
-                document.getElementById("background-music").play();
+            });
+
+             stepOneButton.addEventListener('click', function () {
+                document.getElementsByClassName("step-1")[0].classList.add("hide");
+                document.getElementsByClassName("step-2")[0].classList.remove("hide");
+
+            });
+
+             stepTwoButton.addEventListener('click', function () {
+                  document.getElementsByClassName("step-2")[0].classList.add("hide");
+                document.getElementsByClassName("step-3")[0].classList.remove("hide");
             });
 
             function generateEvilFaces() {

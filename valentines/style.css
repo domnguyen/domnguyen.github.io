@@ -4,7 +4,7 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background-color: rgb(246, 170, 181);
+    background-color: #E6E6FA;
     font-family: Arial, sans-serif;
     height: 100vh;
     margin: 0;
@@ -80,4 +80,8 @@ footer {
     bottom: 10px;
     text-align: center;
     font-size: 14px;
+}
+
+.hide{
+    display:none;
 }
