@@ -54,11 +54,17 @@
 
 
       <div class="content-box step-done hide">
-        <h1>I Love You!!!</h1>
+        <h1>I ❤️ You Mia!</h1>
         <p>You're my forever valentine. 1 year down, forever to go!</p>
         <p>Please keep February 14th, 2026 open for our date.</p>
         <a href="https://www.google.com/calendar/render?action=TEMPLATE&text=Valentines+Day+Date&details=Date+with+Dom&location=Irvine&dates=20260214T180000Z%2F20260215T062000Z">Google Calendar Invite</a>
-        <img src="image4.jpg" class="logo img-responsive">
+        <br>
+        <a href="schedule.html" target="_blank">Valentines Itinerary</a>
+
+        <img src="image4.jpg" class="logo img-responsive coupleimg">
+                <img src="discodom.png" class="logo img-responsive hide discodom">
+
+        <button id="loadAltImage">Pss... look at this other image</button>
 
        
     </div>
@@ -82,6 +88,8 @@
             const stepThreeButton = document.getElementById('next-3');
 
             const accidentButton = document.getElementById('accident');
+            const loadAltImageButton = document.getElementById('loadAltImage');
+
 
 
 
@@ -125,6 +133,12 @@
 
                 document.getElementsByClassName("step-3")[0].classList.add("hide");
                 document.getElementsByClassName("step-no")[0].classList.remove("hide");
+            });
+
+            loadAltImageButton.addEventListener('click', function () {
+                
+                document.getElementsByClassName("coupleimg")[0].classList.add("hide");
+                document.getElementsByClassName("discodom")[0].classList.remove("hide");
             });
 
             function generateEvilFaces() {
