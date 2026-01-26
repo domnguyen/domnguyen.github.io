@@ -23,7 +23,9 @@
     </div>
 
      <div class="content-box step-3 hide">
-        <h1>Dear Euphemia.......Will you be my Valentine?</h1>
+        <h1>Dear Euphemia.......
+            <br>
+            Will you be my Valentine?</h1>
         <div class="button-container">
             <button id="yes">Yes</button>
             <button id="no">No</button>
@@ -31,13 +33,17 @@
     </div>
 
 
-     <div class="content-box hide">
-        <h1>Will you be my Valentine?</h1>
+       <div class="content-box step-no hide">
+        <h1>DID U CLICK NO???</h1>
         <div class="button-container">
-            <button id="yes">Yes</button>
-            <button id="no">No</button>
+            <button id="accident">It was an accident I swear...</button>
+           
         </div>
     </div>
+
+
+
+
  
 
     <audio id="background-music" loop>
@@ -53,6 +59,9 @@
             const stepOneButton = document.getElementById('next-1');
             const stepTwoButton = document.getElementById('next-2');
             const stepThreeButton = document.getElementById('next-3');
+
+            const accidentButton = document.getElementById('accident');
+
             
             noButton.addEventListener('mouseenter', function () {
                 noButton.classList.add('shake');
@@ -79,8 +88,20 @@
                 document.getElementsByClassName("step-3")[0].classList.remove("hide");
             });
 
+              accidentButton.addEventListener('click', function () {
+                  document.getElementsByClassName("step-no")[0].classList.add("hide");
+                document.getElementsByClassName("step-3")[0].classList.remove("hide");
+            });
+
+               noButton.addEventListener('click', function () {
+                generateEvilFaces();
+
+                document.getElementsByClassName("step-3")[0].classList.add("hide");
+                document.getElementsByClassName("step-no")[0].classList.remove("hide");
+            });
+
             function generateEvilFaces() {
-                for (let i = 0; i < 5; i++) {
+                for (let i = 0; i < 30; i++) {
                     let evilFace = document.createElement('div');
                     evilFace.innerHTML = '😈';
                     evilFace.classList.add('evil-face');

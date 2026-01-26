@@ -40,4 +40,12 @@ document.addEventListener("DOMContentLoaded", function () {
             }, 1000);
         }
     }
+
+ yesButton.addEventListener('click', function () {
+        alert('Yay! Can’t wait for our date! ❤️');
+        confetti();
+        document.getElementById("background-music").play();
+    });
+
+
 });
