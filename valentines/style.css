@@ -35,6 +35,12 @@ button {
     transition: all 0.3s ease;
 }
 
+.img-responsive{
+    margin:0 auto;
+    max-width:350px;
+    display:block;
+    height:auto;
+}
 /* Yes Button */
 #yes {
     background-color: rgb(195, 247, 195);

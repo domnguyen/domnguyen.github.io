@@ -13,12 +13,7 @@ document.addEventListener("DOMContentLoaded", function () {
         noButton.classList.remove('shake');
     });
 
-    // Yes button triggers confetti and music
-    yesButton.addEventListener('click', function () {
-        alert('Yay! Can’t wait for our date! ❤️');
-        confetti();
-        document.getElementById("background-music").play();
-    });
+
 
     // Function to generate multiple evil face emojis
     function generateEvilFaces() {
@@ -41,11 +36,6 @@ document.addEventListener("DOMContentLoaded", function () {
         }
     }
 
- yesButton.addEventListener('click', function () {
-        alert('Yay! Can’t wait for our date! ❤️');
-        confetti();
-        document.getElementById("background-music").play();
-    });
 
 
 });
