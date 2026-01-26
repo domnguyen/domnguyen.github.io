@@ -1,5 +1,15 @@
 /* General Page Styling */
+
+.coming-soon-regular, button {
+  font-family: "Coming Soon", cursive;
+  font-weight: 400;
+  font-style: normal;
+}
+
 body {
+     font-family: "Coming Soon", cursive;
+  font-weight: 400;
+  font-style: normal;
     display: flex;
     flex-direction: column;
     justify-content: center;
