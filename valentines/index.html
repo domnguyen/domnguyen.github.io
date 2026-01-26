@@ -22,6 +22,8 @@
 
     <div class="content-box step-2 hide">
         <h1>Oh wait, is that you Mia?? </h1>
+                <img src="image1.heic" class="logo img-responsive">
+
         <div class="button-container">
             <button id="next-2">... Whats up?</button>
         </div>
@@ -30,6 +32,8 @@
      <div class="content-box step-3 hide">
         <h1>Dear Euphemia.......
             <br>
+                            <img src="image2.heic" class="logo img-responsive">
+
             Will you be my Valentine?</h1>
         <div class="button-container">
             <button id="yes">Yes</button>
@@ -40,12 +44,24 @@
 
        <div class="content-box step-no hide">
         <h1>DID U CLICK NO???</h1>
+                                    <img src="image3.heic" class="logo img-responsive">
+
         <div class="button-container">
             <button id="accident">It was an accident I swear...</button>
            
         </div>
     </div>
 
+
+      <div class="content-box step-done hide">
+        <h1>I Love You!!!</h1>
+        <p>You're my forever valentine. 1 year down, forever to go!</p>
+        <p>Please keep February 14th, 2026 open for our date.</p>
+        <a href="https://www.google.com/calendar/render?action=TEMPLATE&text=Valentines+Day+Date&details=Date+with+Dom&location=Irvine&dates=20260214T180000Z%2F20260215T062000Z">Google Calendar Invite</a>
+        <img src="image4.jpg" class="logo img-responsive">
+
+       
+    </div>
 
 
 
@@ -67,7 +83,8 @@
 
             const accidentButton = document.getElementById('accident');
 
-            
+
+
             noButton.addEventListener('mouseenter', function () {
                 noButton.classList.add('shake');
                 generateEvilFaces();
@@ -78,11 +95,16 @@
             });
             
             yesButton.addEventListener('click', function () {
-                //alert('Yay! Can’t wait for our date! ❤️');
                 confetti();
+                document.getElementsByClassName("step-3")[0].classList.add("hide");
+                document.getElementsByClassName("step-done")[0].classList.remove("hide");
+
+
             });
 
              stepOneButton.addEventListener('click', function () {
+                document.getElementById("background-music").play();
+
                 document.getElementsByClassName("step-1")[0].classList.add("hide");
                 document.getElementsByClassName("step-2")[0].classList.remove("hide");
 
